@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Penjualan Cilok M2M - Menu</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="app-header">
+    <h1>Cilok M2M</h1>
+    <p>Transaksi lebih cepat dan efisien</p>
+</header>
+
+<div class="container">
+
+    <h2 class="section-title">Menu Cilok</h2>
+
+    <div class="menu">
+
+        <!-- CILOK SMALL -->
+        <div class="menu-card">
+            <img src="img/cilok.webp" class="menu-img">
+            <h3>Cilok Small</h3>
+            <p class="price">Rp 5.000</p>
+            <input id="qty1" type="number" value="1" class="qty">
+            <button onclick="tambah('Cilok Small', 5000, 'qty1')" class="add-btn">Tambah</button>
+        </div>
+
+        <!-- CILOK MEDIUM -->
+        <div class="menu-card">
+            <img src="img/cilok.webp" class="menu-img">
+            <h3>Cilok Medium</h3>
+            <p class="price">Rp 10.000</p>
+            <input id="qty2" type="number" value="1" class="qty">
+            <button onclick="tambah('Cilok Medium', 10000, 'qty2')" class="add-btn">Tambah</button>
+        </div>
+
+        <!-- CILOK BIG -->
+        <div class="menu-card">
+            <img src="img/cilok.webp" class="menu-img">
+            <h3>Cilok Big</h3>
+            <p class="price">Rp 20.000</p>
+            <input id="qty3" type="number" value="1" class="qty">
+            <button onclick="tambah('Cilok Big', 20000, 'qty3')" class="add-btn">Tambah</button>
+        </div>
+
+        <!-- BATAGOR -->
+        <div class="menu-card">
+            <img src="img/Batagor.webp" class="menu-img">
+            <h3>Batagor</h3>
+            <p class="price">Rp 10.000</p>
+            <input id="qty4" type="number" value="1" class="qty">
+            <button onclick="tambah('Batagor', 10000, 'qty4')" class="add-btn">Tambah</button>
+        </div>
+
+    </div>
+
+    <h2 class="section-title">Keranjang</h2>
+
+    <div class="card">
+        <table id="keranjang">
+            <tr><th>Menu</th><th>Qty</th><th>Subtotal</th><th>Aksi</th></tr>
+        </table>
+
+        <p id="total" class="total">Total: 0</p>
+    </div>
+
+    <button onclick="bukaQRIS()" class="qris-btn">Bayar via QRIS</button>
+    <a href="index.html"><button class="laporan-btn">Kembali ke Home</button></a>
+
+</div>
+
+<!-- Modal QRIS -->
+<div id="qrisModal" class="modal">
+    <div class="modal-content">
+        <h2>Scan QRIS untuk Membayar</h2>
+        <img src="img/qris.jpeg" class="qris-img" />
+        <button onclick="selesaiQRIS()" class="success-btn">Saya Sudah Bayar</button>
+        <button onclick="tutupQRIS()" class="close-btn">Tutup</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

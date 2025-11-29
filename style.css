@@ -1,0 +1,314 @@
+/* ============================
+   GLOBAL
+============================ */
+body {
+    margin: 0;
+    background: #F5E9D6;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+/* ============================
+   HEADER
+============================ */
+.app-header {
+    text-align: center;
+    padding: 20px 0;
+    background: #6B3F27;
+    color: white;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.app-header h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+/* ============================
+   CONTAINER
+============================ */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.section-title {
+    color: #6B3F27;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* ============================
+   HOME PAGE
+============================ */
+.home-container {
+    text-align: center;
+}
+
+.home-img {
+    width: 180px;
+    margin: 20px auto;
+    display: block;
+}
+
+.home-title {
+    color: #6B3F27;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.home-desc {
+    color: #8a6848;
+    font-size: 16px;
+    margin: 10px 0 20px;
+}
+
+/* BUTTONS */
+.primary-btn {
+    background: #6B3F27;
+    color: white;
+    padding: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.secondary-btn {
+    background: #A66A3B;
+    color: white;
+    padding: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+    opacity: 0.9;
+}
+
+/* ============================
+   MENU LIST
+============================ */
+.menu {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu-card {
+    background: white;
+    width: 45%;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.menu-img {
+    width: 100px;
+}
+
+.price {
+    color: #A66A3B;
+    font-weight: bold;
+}
+
+.qty {
+    width: 60px;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #C9A37C;
+}
+
+/* ============================
+   BUTTON ADD TO CART
+============================ */
+.add-btn {
+    background: #6B3F27;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background: #4E2D1A;
+}
+
+/* ============================
+   KERANJANG CARD
+============================ */
+.card {
+    background: #FFF;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+}
+
+/* ============================
+   TABLES
+============================ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #EEE;
+    text-align: center;
+}
+
+.total {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6B3F27;
+    text-align: right;
+    margin-top: 10px;
+}
+
+/* ============================
+   BUTTON QRIS
+============================ */
+.qris-btn {
+    background: #A66A3B;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.qris-btn:hover {
+    background: #874f2e;
+}
+
+/* BUTTON LAPORAN / BACK */
+.laporan-btn {
+    background: #6B3F27;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.laporan-btn:hover {
+    background: #4E2D1A;
+}
+
+/* ============================
+   QRIS MODAL
+============================ */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #FFF;
+    padding: 25px;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.qris-img {
+    width: 200px;
+    margin: 10px 0;
+}
+
+.success-btn {
+    background: #6B3F27;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.close-btn {
+    background: #B0B0B0;
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* ============================
+   HAPUS ITEM BUTTON
+============================ */
+.hapus-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.hapus-btn:hover {
+    background: #d93636;
+}
+
+/* ============================
+   STRUK PAGE
+============================ */
+.struk-date {
+    text-align: right;
+    color: #6B3F27;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.home-btn {
+    background: #6B3F27;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.home-btn:hover {
+    background: #4E2D1A;
+}
